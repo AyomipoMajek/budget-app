@@ -1,0 +1,21 @@
+<%= render partial: "shared/sign", locals:{model: categories_path, total: "Category"}%>
+<%@category.each do |e|%>
+<div class="category">
+  <div class="category-name">
+    <%= link_to e.name, categories_path(e.id) %>
+  </div>
+
+  <div class="category-icon">
+    <%= image_tag e.icon %>
+  </div>
+
+  <div class="money">
+    <p>$<%= e.exchanges.sum(:amount)%></p>
+    <%= button_to "remove #{e.name}", category_path(e.id), method: :delete %>
+  </div>
+  <%end%>
+  
+   <div class="add">  
+    <%= link_to "Add category", new_category_path %>
+  </div>
+</div>

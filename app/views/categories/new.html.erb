@@ -1,0 +1,25 @@
+<%= render partial: "shared/sign", locals: { model: categories_path, total: "New category" } %>
+
+<div class="top-links">
+  <%= link_to 'BACK', session.delete(:return_to) || root_path, class: "back-button" %>
+  <h2 class="cat-heading">New Category</h2>
+  <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'sign-out-button' %>
+</div>
+
+<%= form_with model: @category, url: categories_path do |form| %>
+  <div class="input">
+    <%= form.label :name %>
+    <%= form.text_field :name, placeholder: "Enter category name", required: true %>
+  </div>
+  <div class="input">
+    <%= form.label :icon %>
+    <%= form.file_field :icon, id: 'image-input' %>
+  </div>
+  <div class="img">
+    <img id="image-preview" src="#" alt="Preview Image">
+  </div>
+  <div class="action">
+    <%= form.submit "Create category" %>
+  </div>
+  <% end %>
+</div>
