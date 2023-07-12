@@ -15,9 +15,9 @@
   <div class="actions">
     <%= f.submit "Log in" %>
   </div>
-<% end %>
-<div class="log">
-  <p>Don't have an account? <%= link_to "sign up", new_user_registration_path %></p>
-  <%= link_to "forgot your password?", new_password_path(resource_name) %>
-</div>
+  <% end %>
+  <div class="log">
+    <p>Don't have an account? <%= link_to "sign up", new_user_registration_path %></p>
+    <%= link_to "forgot your password?", new_password_path(resource_name) %>
+  </div>
 </div>

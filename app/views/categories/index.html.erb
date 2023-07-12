@@ -1,6 +1,6 @@
 <%= stylesheet_link_tag 'style'%>
 
-<%= render partial: "shared/sign", locals:{model: categories_path, total: "Category"}%>
+<%= render partial: "shared/sign", locals:{model: categories_path, total: "CATEGORY"}%>
 <% @category.each do |e| %>
 
 <div class="category">
@@ -18,7 +18,7 @@
   </div>
   <%end%>
   
-   <div class="add">  
+   <div class="add">
     <%= link_to "Add category", new_category_path %>
   </div>
 </div>
