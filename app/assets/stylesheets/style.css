@@ -128,7 +128,7 @@
   flex-direction: row;
   justify-content: space-between;
   background-color: #3778c2;
-  padding: 25px;
+  padding: 25px 10px 25px 10px;
   color: #fff;
 }
 
