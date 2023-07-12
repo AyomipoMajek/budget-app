@@ -1,0 +1,16 @@
+<div class="entry">
+  <div class="entry-name">
+    <% if user_signed_in? %>
+      <%= button_to "sign out", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= button_to "sign in", new_user_session_path %>
+    <% end %>
+  </div>
+  <div class="entry-money">
+    <p>$<%= total %></p>
+  </div>
+
+  <div class="exit">
+    <%= link_to "<", model %>
+  </div>
+</div>

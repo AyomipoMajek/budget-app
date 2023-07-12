@@ -4,7 +4,7 @@ class CategoriesController < ApplicationController
   def splash; end
 
   def index
-    @categories = Category.where(user_id: current_user.id).order(created_at: :desc)
+    @category = Category.where(author_id: current_user.id).order(created_at: :desc)
   end
 
   def show
@@ -18,10 +18,10 @@ class CategoriesController < ApplicationController
   end
 
   def create
-    @category = Category.new(category)
-    @category.user_id = current_user.id
+    @category = Category.new(category_params)
+    @category.author_id = current_user.id
     if @category.save
-      redirect_to categories_path, notice: 'Category was successfully created.'
+      redirect_to categories_path, notice: 'Category has been created successfully.'
     else
       render :new
     end
@@ -30,7 +30,7 @@ class CategoriesController < ApplicationController
   def destroy
     @category = Category.find(params[:id])
     if @category.destroy
-      redirect_to categories_path, notice: 'Category was successfully deleted.'
+      redirect_to categories_path, notice: 'Category has been successfully deleted.'
     else
       redirect_to categories_path, notice: 'Retry deleting category.'
     end

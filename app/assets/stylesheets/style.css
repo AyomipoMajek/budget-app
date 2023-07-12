@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* style for splash page */
+
+.splash-screen {
+  text-align: center;
+  margin-top: 30%;
+}
+
+.splash-content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.splash-content p {
+  margin-bottom: 7rem;
+}
+
+.user-in h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-btn {
+  text-decoration: none;
+  color: #000;
+  background-color: #3778c2;
+  border-radius: 5px;
+  width: 85%;
+  align-self: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.entry-btn:hover,
+.entry-btn:focus {
+  transform: scale(1.1);
+}
+
+/* style for login page */
+
+.
+
+.login h2 {
+  text-align: center;
+}

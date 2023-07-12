@@ -1,16 +1,20 @@
+<%= stylesheet_link_tag 'style'%>
+
 <section class="splash-screen">
   <div class="splash-content">
     <h1>Welcome to Your Budget App</h1>
     <p>Take control of your finances with our budgeting app. Easily track your expenses, set savings goals, and achieve financial freedom</p>
 
     <div>
-      <div>
+      <div class="user-in">
         <% if user_signed_in? %>
           <%= link_to "Resume", categories_path, class: "btn btn-primary" %>
         <% else %>
           <h2>Get Started</h2>
-          <%= link_to "Sign Up", categories_path, class: "entry-btn" %>
-          <%= link_to "Log In", new_user_registration_path, class: "entry-btn" %>
+          <div class="user-details">
+            <%= link_to "Log in", categories_path, class: "entry-btn" %>
+            <%= link_to "Sign up", new_user_registration_path, class: "entry-btn" %>
+          </div>
         <% end %>
       </div>
     </div>

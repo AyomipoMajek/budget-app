@@ -1,0 +1,3 @@
+<%= stylesheet_link_tag 'style'%>
+
+<%= render partial:"shared/sign", locals:{model: categories_path, total:"$#{@category.exchanges.sum(:amount)}"}%>

@@ -10,6 +10,7 @@ gem 'pg'
 
 gem 'dotenv-rails'
 
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
