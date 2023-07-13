@@ -10,7 +10,7 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find(params[:id])
     @exchanges = @category.exchanges.order(created_at: :desc)
-    @total_amount = @category.exchangess.sum(:amount)
+    @total_amount = @category.exchanges.sum(:amount)
   end
 
   def new

@@ -20,6 +20,7 @@ class ExchangesController < ApplicationController
     else
       render 'new'
     end
+  end
 
     private
 
