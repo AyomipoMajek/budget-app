@@ -6,19 +6,18 @@ class ExchangesController < ApplicationController
 
   def create
     @original = Category.find(params[:cat_id])
-    @cate = Category.find(params[:exchange][:category], user_id: current_user).first
-    @transaction = Exchange.new(exchange_params)
-    @transaction.user_id = current_user.id
+    @cate = Category.where(name: params[:exchange][:category], author_id: current_user).first
     if @cate.nil?
       flash[:danger] = 'Category not found, create new category'
-      redirect_to category_path
-    elsif @transaction.save
+      redirect_to categories_path
+    else
+      @transaction = Exchange.new(transaction_params)
+      @transaction.author_id = current_user.id
+      @transaction.save
+      @complete = CategoryExchange.new(exchange_id: @transaction.id, category_id: @cate.id)
+      @complete.save
       flash[:success] = 'Transaction created'
       redirect_to category_path(@cate.id)
-      @complete = Category.find(exchange_id: @transaction.id, catgory_id: @cate.id)
-      @complete.save
-    else
-      render 'new'
     end
   end
 
