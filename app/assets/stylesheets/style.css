@@ -32,7 +32,8 @@
   flex-direction: column;
 }
 
-.entry-btn {
+.entry-btn,
+.btn-primary {
   text-decoration: none;
   color: #000;
   background-color: #3778c2;
