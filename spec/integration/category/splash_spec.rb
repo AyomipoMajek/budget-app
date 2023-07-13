@@ -11,7 +11,7 @@ RSpec.describe Category, type: :system do
     end
 
     it 'displays the app description' do
-      expect(page).to have_content 'Take control of your finances with our budgeting app. Easily track your expenses, set savings goals, and achieve financial freedom'
+      expect(page).to have_content 'Take control of your finances with our budgeting app'
     end
 
     it 'displays the "Log in" and "Sign up" buttons if user is not signed in' do

@@ -21,7 +21,7 @@ class ExchangesController < ApplicationController
     end
   end
 
-    private
+  private
 
   def transaction_params
     params.require(:exchange).permit(:name, :amount)

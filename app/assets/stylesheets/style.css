@@ -62,31 +62,6 @@
   margin-bottom: 3rem;
 }
 
-.input {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-
-.input label {
-  margin-bottom: 10px;
-}
-
-.input input {
-  padding: 10px;
-  font-size: 0.8rem;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-  background-color: rgba(185, 228, 255, 0.637);
-  transition: 0.3s;
-}
-
-.input input:hover,
-.input input:focus {
-  transform: scale(1.02);
-}
-
 .actions {
   padding: 10px;
 }
@@ -243,7 +218,7 @@
 }
 
 .money button {
-  color: #ff0000;
+  color: #f00;
   border: none;
   background: none;
 }
@@ -282,6 +257,31 @@
   margin: 10px;
   border-radius: 5px;
   font-size: 1rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.input label {
+  margin-bottom: 10px;
+}
+
+.input input {
+  padding: 10px;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgba(185, 228, 255, 0.637);
+  transition: 0.3s;
+}
+
+.input input:hover,
+.input input:focus {
+  transform: scale(1.02);
 }
 
 .cate {
