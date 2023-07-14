@@ -54,7 +54,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Budget App] <a name="about-project"></a>
 
-> This is an app for financial transactions created as part of the ruby on rails capstone project at Microverse. This app is a mobile web application where a user's budget can be managed, have a list of transactions associated with a category, so that the user can see how much money it spent and on what.
+> This is an app for financial transactions created as part of the ruby on rails capstone project at Microverse. This app is a mobile web application where a user's budget can be managed, have a list of transactions associated with a category, so that the user can see how much money is spent and on what.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -102,6 +102,10 @@ After you're finished please remove all the comments and instructions!
 - [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Project Presentation <a name="project-presentation"></a>
+
+- [Project Presentation video link](https://www.loom.com/share/d031b851954141f0a5d18cecc01dddc0?sid=b2e63c6c-005e-4bd7-b794-56f15ec75aca)  
 
 <!-- GETTING STARTED -->
 
