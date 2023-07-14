@@ -1,0 +1,12 @@
+<div class="each-cate">
+<%= render partial:"shared/sign", locals:{model: categories_path, total:"$#{@category.exchanges.sum(:amount)}"} %>
+  <%@exchanges.each do |e|%>
+  <div class="cate">
+    <p><%=e.name%></p>
+    <p>$<%=e.amount%></p>
+  </div>
+  <%end%>
+<div class='add-2'>
+  <%= link_to "Add Transaction", new_category_exchange_path(@category.id,cat_id: @category.id) %>
+</div>
+</div>

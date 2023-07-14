@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* style for splash page */
+
+.splash-screen {
+  text-align: center;
+  margin-top: 30%;
+}
+
+.splash-content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.splash-content p {
+  margin-bottom: 7rem;
+}
+
+.user-in h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-btn,
+.btn-primary {
+  text-decoration: none;
+  color: #000;
+  background-color: #3778c2;
+  border-radius: 5px;
+  width: 85%;
+  align-self: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.entry-btn:hover,
+.entry-btn:focus {
+  transform: scale(1.1);
+}
+
+/* style for login page */
+
+.login {
+  margin-top: 20%;
+}
+
+.login h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.actions {
+  padding: 10px;
+}
+
+.actions input {
+  font-size: 1.1rem;
+  padding: 7px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgba(71, 152, 213, 0.637);
+}
+
+.log {
+  padding: 10px;
+}
+
+.log p {
+  margin-bottom: 10px;
+}
+
+.log a {
+  text-decoration: none;
+  color: #30218f;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+/* style for signup page */
+
+.sign-up h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* style for category page */
+
+.entry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #3778c2;
+  padding: 25px 10px 25px 10px;
+  color: #fff;
+}
+
+.entry p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.exit {
+  font-size: 1rem;
+  border-radius: 2px;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+
+.exit a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.entry-name button {
+  font-size: 1rem;
+  background-color: #3778c2;
+  border: 1px solid #fff;
+  padding: 5px;
+  outline: none;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.add {
+  background-color: #5fb523;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  padding: 1.3rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.add a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 90px 10px 90px;
+}
+
+/* style for new category */
+
+.top-links h2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.action input {
+  border: none;
+  background: #5fb523;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  align-items: center;
+  border-bottom: solid;
+}
+
+.category-details {
+  display: flex;
+  align-items: center;
+}
+
+.category-icon img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.category-name {
+  font-size: 1.2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.category-name a {
+  color: #000;
+  text-decoration: none;
+}
+
+.money {
+  text-align: center;
+}
+
+.money p {
+  padding-bottom: 5px;
+}
+
+.money button {
+  color: #f00;
+  border: none;
+  background: none;
+}
+
+/* style for transaction page */
+
+.add-2 {
+  background-color: #5fb523;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  padding: 1.2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.add-2 a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 70px 10px 70px;
+}
+
+.transactions h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.actions-cre input {
+  border: none;
+  background: #5fb523;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.input label {
+  margin-bottom: 10px;
+}
+
+.input input {
+  padding: 10px;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgba(185, 228, 255, 0.637);
+  transition: 0.3s;
+}
+
+.input input:hover,
+.input input:focus {
+  transform: scale(1.02);
+}
+
+.cate {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
